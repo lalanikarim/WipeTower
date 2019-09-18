@@ -16,8 +16,10 @@ int main(int argc, char ** argv) {
     {
         char * fileName = argv[1];
 
-        WipeTower w(0,0,60,0.5,10);
+        WipeTower w(0,0,60,0.5,10, 0.5);
         w.openFile(string(fileName));
+        cout << endl << endl;
+        w.process();
 
         return 0;
         ifstream file(fileName);
